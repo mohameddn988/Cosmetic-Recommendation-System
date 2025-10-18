@@ -1,0 +1,36 @@
+sephora-web-scraping-project/
+├── backend/                              # Flask Backend
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── routes/
+│   │   │   
+│   │   ├── models/
+│   │   │   
+│   │   ├── services/
+│   │   │   
+│   │   ├── utils/
+│   │   
+│   ├── data/                                 # All extracted data
+│   │   ├──method1_extension/
+│   │   │    └── sephora_products_extension.csv
+│   │   ├──method2_api/
+│   │   │    └── sephora_products_api.json
+│   │   ├──method3_python/
+│   │   │    └── sephora_products_python.csv
+│   │   └──method4_octoparse/
+│   │        └── sephora_products_octoparse.csv
+│   ├── requirements.txt
+│   └── run.py
+├── frontend/                             # Next.js Frontend (Optional)
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── layout.js
+│   │   │   ├── page.js
+│   │   │   └── results/
+│   │   │       └── page.js
+│   │   └── components/
+│   │       ├── ScrapingMethods.js
+│   │       └── ResultsTable.js
+│   ├── package.json
+│   └── next.config.js
+
