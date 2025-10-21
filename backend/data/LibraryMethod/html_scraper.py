@@ -64,11 +64,11 @@ def scrape_vehicles_html():
         fieldnames = vehicles[0].keys()
         
         # Create the folder if it doesn't exist
-        folder_path = os.path.join("data", "method3_python")
+        folder_path = os.path.join("data", "LibraryMethod")
         os.makedirs(folder_path, exist_ok=True)
         
         # Save to CSV
-        csv_file_path = os.path.join(folder_path, "LibraryMethod.csv")
+        csv_file_path = os.path.join(folder_path, "LibraryVehicles.csv")
         with open(csv_file_path, "w", newline="", encoding="utf-8") as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
             writer.writeheader()
